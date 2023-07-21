@@ -1,0 +1,9 @@
+\.git
+\.gitignore
+\.manual
+
+^/README.*
+^/LICENSE.*
+^/COPYING
+
+screenshots
