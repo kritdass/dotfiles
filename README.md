@@ -13,7 +13,7 @@ These are my personal dotfiles for my EndeavourOS system, though they should wor
 **Window Manager:** [Qtile (git)](https://qtile.readthedocs.io/en/latest/) \
 **Compositor:** [Picom (fdev31)](https://github.com/fdev31/picom/) \
 **Terminal Emulator:** [WezTerm](https://wezfurlong.org/wezterm/) \
-**Shell:** [Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) \
+**Shell:** [Fish](https://fishshell.com/) \
 **Editor:** [LazyVim](https://www.lazyvim.org/) \
 **App Launcher:** [Rofi](https://github.com/davatorium/rofi) \
 **Notifications:** [Dunst](https://dunst-project.org/) \
@@ -21,8 +21,8 @@ These are my personal dotfiles for my EndeavourOS system, though they should wor
 
 ## Setup
 1. On top of the programs listed above, you will need to install:
-    - [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
-    - [PowerLine10k](https://github.com/romkatv/powerlevel10k)
+    - [Fisher](https://github.com/jorgebucaran/fisher)
+    - [Tide](https://github.com/IlanCosman/tide)
     - [Fira Code Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode)
     - [JetFlow](https://github.com/kritdass/JetFlow/)
     - [Inter](https://fonts.google.com/specimen/Inter)
