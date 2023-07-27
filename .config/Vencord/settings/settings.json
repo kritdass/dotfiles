@@ -31,7 +31,7 @@
             "enabled": false
         },
         "MessageEventsAPI": {
-            "enabled": false
+            "enabled": true
         },
         "MessagePopoverAPI": {
             "enabled": false
@@ -116,7 +116,7 @@
             "enabled": false
         },
         "FakeNitro": {
-            "enabled": false
+            "enabled": true
         },
         "FakeProfileThemes": {
             "enabled": false
@@ -173,7 +173,7 @@
             "enabled": false
         },
         "MessageLogger": {
-            "enabled": false
+            "enabled": true
         },
         "MessageTags": {
             "enabled": false
@@ -269,7 +269,7 @@
             "enabled": false
         },
         "RelationshipNotifier": {
-            "enabled": false
+            "enabled": true
         },
         "RevealAllSpoilers": {
             "enabled": false
@@ -393,6 +393,12 @@
         },
         "Wikisearch": {
             "enabled": false
+        },
+        "FavoriteGifSearch": {
+            "enabled": false
+        },
+        "VoiceMessages": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -405,6 +411,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1689583172968
+        "settingsSyncVersion": 1690376416840
     }
 }

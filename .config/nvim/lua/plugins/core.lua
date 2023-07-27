@@ -1,4 +1,33 @@
 return {
+  {
+    "goolord/alpha-nvim",
+    opts = function(_, dashboard)
+      local logo = [[
+        ████ ██████           █████      ██
+       ███████████             █████ 
+       █████████ ███████████████████ ███   ███████████
+      █████████  ███    █████████████ █████ ██████████████
+     █████████ ██████████ █████████ █████ █████ ████ █████
+   ███████████ ███    ███ █████████ █████ █████ ████ █████
+  ██████  █████████████████████ ████ █████ █████ ████ ██████
+        ]]
+      dashboard.section.header.val = vim.split(logo, "\n")
+      dashboard.section.header.opts.hl = "AlphaHeader"
+      dashboard.section.buttons.opts.hl = "AlphaButtons"
+      dashboard.section.footer.opts.hl = "AlphaFooter"
+    end,
+  },
+
+  {
+    "LunarVim/breadcrumbs.nvim",
+    dependencies = {
+      { "SmiteshP/nvim-navic" },
+    },
+    config = function()
+      require("breadcrumbs").setup()
+    end,
+  },
+
   -- add onedark
   {
     "olimorris/onedarkpro.nvim",
@@ -213,9 +242,6 @@ return {
       }
     end,
   },
-
-  -- use mini.starter instead of alpha
-  { import = "lazyvim.plugins.extras.ui.mini-starter" },
 
   -- add jsonls and schemastore packages, and setup treesitter for json, json5 and jsonc
   { import = "lazyvim.plugins.extras.lang.json" },

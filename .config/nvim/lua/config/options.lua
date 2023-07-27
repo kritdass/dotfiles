@@ -4,3 +4,6 @@
 
 vim.opt.foldenable = false
 vim.opt.foldmethod = "indent"
+vim.api.nvim_set_hl(0, "AlphaHeader", { fg = "#61afef" })
+vim.api.nvim_set_hl(0, "AlphaButtons", { fg = "#89ca78" })
+vim.api.nvim_set_hl(0, "AlphaFooter", { fg = "#e5c07b" })
