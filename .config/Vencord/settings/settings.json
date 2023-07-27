@@ -22,13 +22,13 @@
             "enabled": true
         },
         "MemberListDecoratorsAPI": {
-            "enabled": false
+            "enabled": true
         },
         "MessageAccessoriesAPI": {
             "enabled": false
         },
         "MessageDecorationsAPI": {
-            "enabled": false
+            "enabled": true
         },
         "MessageEventsAPI": {
             "enabled": true
@@ -116,7 +116,13 @@
             "enabled": false
         },
         "FakeNitro": {
-            "enabled": true
+            "enabled": true,
+            "enableEmojiBypass": true,
+            "enableStickerBypass": true,
+            "enableStreamQualityBypass": true,
+            "transformStickers": true,
+            "transformEmojis": true,
+            "transformCompoundSentence": false
         },
         "FakeProfileThemes": {
             "enabled": false
@@ -173,7 +179,13 @@
             "enabled": false
         },
         "MessageLogger": {
-            "enabled": true
+            "enabled": false,
+            "deleteStyle": "text",
+            "ignoreBots": false,
+            "ignoreSelf": false,
+            "ignoreUsers": "",
+            "ignoreChannels": "",
+            "ignoreGuilds": ""
         },
         "MessageTags": {
             "enabled": false
@@ -251,7 +263,7 @@
             "enabled": false
         },
         "PlatformIndicators": {
-            "enabled": false
+            "enabled": true
         },
         "PronounDB": {
             "enabled": false
@@ -269,7 +281,12 @@
             "enabled": false
         },
         "RelationshipNotifier": {
-            "enabled": true
+            "enabled": true,
+            "offlineRemovals": true,
+            "groups": true,
+            "servers": true,
+            "friends": true,
+            "friendRequestCancels": true
         },
         "RevealAllSpoilers": {
             "enabled": false
@@ -411,6 +428,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1690376416840
+        "settingsSyncVersion": 1690468587975
     }
 }
