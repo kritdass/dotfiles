@@ -13,8 +13,13 @@ extension_defaults = widget_defaults.copy()
 
 screens = [
     Screen(
-        top=top_bar,
+        top=top_bar(),
         wallpaper=wallpaper,
         wallpaper_mode="fill",
     ),
+    Screen(
+        top=top_bar(),
+        wallpaper=wallpaper,
+        wallpaper_mode="fill"
+    ) 
 ]

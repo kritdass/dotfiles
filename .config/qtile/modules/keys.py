@@ -63,4 +63,10 @@ keys = [
         ),
         desc="Switch between dark and light themes"
     ),
+    Key(
+        [mod],
+        "s",
+        lazy.next_screen(),
+        desc="Switch the screen in focus"
+    )
 ]
