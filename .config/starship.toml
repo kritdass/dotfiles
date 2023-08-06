@@ -21,6 +21,6 @@ format = '[$branch(:$remote_branch)]($style) '
 format = '([$staged$modified$untracked$deleted]($style))'
 staged = '[+$count](yellow) '
 modified = '[!$count](yellow) '
-untracked = '[?$count](green) '
+untracked = '[?$count](cyan) '
 deleted = '[-$count](red) '
 

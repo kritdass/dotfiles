@@ -22,7 +22,7 @@ These are my personal dotfiles for my EndeavourOS system, though they should wor
 ## Setup
 1. On top of the programs listed above, you will need to install:
     - [Fisher](https://github.com/jorgebucaran/fisher)
-    - [Tide](https://github.com/IlanCosman/tide)
+    - [Starship](https://starship.rs/)
     - [Fira Code Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode)
     - [JetFlow](https://github.com/kritdass/JetFlow/)
     - [Inter](https://fonts.google.com/specimen/Inter)

@@ -20,5 +20,5 @@ wmname = "qtile"
 def start_once():
     subprocess.call([os.path.expanduser("~/.config/qtile/scripts/autostart.sh")])
 
-print(layouts, floating_layout, screens, groups, keys, widget_defaults)
 
+print(layouts, floating_layout, screens, groups, keys, widget_defaults)

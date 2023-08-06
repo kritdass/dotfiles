@@ -34,6 +34,7 @@ sep = [
     widget.Spacer(length=5, background=colors["background"], **rounded),
 ]
 
+
 def top_bar():
     return bar.Bar(
         [
@@ -75,7 +76,9 @@ def top_bar():
             widget.Spacer(length=10, background=colors["background"], **rounded),
             widget.Clock(format=" %B %d", background=colors["background"], **rounded),
             *sep,
-            widget.Clock(format=" %l:%M %p", background=colors["background"], **rounded),
+            widget.Clock(
+                format=" %l:%M %p", background=colors["background"], **rounded
+            ),
             widget.Spacer(length=5, background=colors["background"], **rounded),
             widget.Spacer(length=8),
             widget.Spacer(length=10, background=colors["background"], **rounded),

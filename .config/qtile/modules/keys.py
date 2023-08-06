@@ -61,12 +61,7 @@ keys = [
         lazy.spawn(
             "sh " + os.path.expanduser("~/.config/qtile/scripts/theme_switcher.sh")
         ),
-        desc="Switch between dark and light themes"
+        desc="Switch between dark and light themes",
     ),
-    Key(
-        [mod],
-        "s",
-        lazy.next_screen(),
-        desc="Switch the screen in focus"
-    )
+    Key([mod], "s", lazy.next_screen(), desc="Switch the screen in focus"),
 ]
