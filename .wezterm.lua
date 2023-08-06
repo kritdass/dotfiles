@@ -40,6 +40,6 @@ config.window_padding = {
 	bottom = padding,
 }
 
+config.default_prog = { "/usr/bin/env", "fish", "-l" }
+
 return config
-
-
