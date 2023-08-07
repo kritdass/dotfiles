@@ -9,7 +9,7 @@ error_symbol = '[»](bold red)'
 
 [directory]
 style = 'bold blue'
-read_only = ''
+read_only = ' '
 truncation_length = 3
 truncate_to_repo = false
 truncation_symbol = '…/'
@@ -18,7 +18,11 @@ truncation_symbol = '…/'
 format = '[$branch(:$remote_branch)]($style) '
 
 [git_status]
-format = '([$staged$modified$untracked$deleted]($style))'
+format = '([$ahead_behind$staged$modified$untracked$deleted]($style))'
+ahead = '[⇡$count](yellow) '
+behind = '[⇣$count](red) '
+diverged = '[$ahead_count](green)[⇅](yellow)[$behind_count](red) '
+up_to_date = '[=](green) '
 staged = '[+$count](yellow) '
 modified = '[!$count](yellow) '
 untracked = '[?$count](cyan) '
