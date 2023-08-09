@@ -1,7 +1,7 @@
 import os
 
 mod = "mod4"
-terminal = "wezterm"
+terminal = "st fish"
 
 font = "Fira Code Nerd Font Propo Ret"
 fontsize = 16
@@ -37,7 +37,7 @@ with open(os.path.expanduser("~/.config/theme.txt"), "r") as theme:
         wallpaper = os.path.expanduser("~/.config/qtile/assets/wallpaper_light.png")
 
 workspaces = [
-    ("", "wezterm"),
+    ("", "st fish"),
     ("", "brave"),
     ("󰭹", "discord"),
     ("󰝰", "thunar"),
