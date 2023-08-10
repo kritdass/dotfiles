@@ -20,7 +20,7 @@ with open(os.path.expanduser("~/.config/theme.txt"), "r") as theme:
             "cyan": "56b6c2",
             "white": "828791",
         }
-        wallpaper = os.path.expanduser("~/.config/qtile/assets/wallpaper_dark.png")
+        wallpaper = os.path.expanduser("~/.config/qtile/assets/wallpaper_dark.jpg")
     else:
         colors = {
             "background": "faf4ed",
@@ -34,7 +34,7 @@ with open(os.path.expanduser("~/.config/theme.txt"), "r") as theme:
             "cyan": "d7827e",
             "white": "cecacd",
         }
-        wallpaper = os.path.expanduser("~/.config/qtile/assets/wallpaper_light.png")
+        wallpaper = os.path.expanduser("~/.config/qtile/assets/wallpaper_light.jpg")
 
 workspaces = [
     ("", "st fish"),
