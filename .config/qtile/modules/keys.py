@@ -1,8 +1,6 @@
-from libqtile import qtile
 from libqtile.config import Key
 from libqtile.lazy import lazy
 from utils.settings import mod, terminal
-import subprocess
 import os
 
 
@@ -58,4 +56,10 @@ keys = [
         desc="Switch between dark and light themes",
     ),
     Key([mod], "s", lazy.next_screen(), desc="Switch the screen in focus"),
+    Key(
+        [mod],
+        "e",
+        lazy.group["scratchpad"].dropdown_toggle("term"),
+        desc="Toggle terminal scratchpad",
+    ),
 ]

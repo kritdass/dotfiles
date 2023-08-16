@@ -37,7 +37,7 @@ with open(os.path.expanduser("~/.config/theme.txt"), "r") as theme:
         wallpaper = os.path.expanduser("~/.config/qtile/assets/wallpaper_light.jpg")
 
 workspaces = [
-    ("", "st fish"),
+    ("", terminal),
     ("", "brave"),
     ("󰭹", "discord"),
     ("󰝰", "thunar"),

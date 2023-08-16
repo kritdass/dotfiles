@@ -1,8 +1,7 @@
-from libqtile.config import Group, Key, Match
+from libqtile.config import DropDown, Group, Key, ScratchPad
 from libqtile.lazy import lazy
 from modules.keys import keys, mod
-from utils.settings import workspaces
-import subprocess
+from utils.settings import workspaces, terminal
 
 groups = []
 
@@ -31,3 +30,12 @@ for i, workspace in enumerate(workspaces):
             ),
         ]
     )
+
+dropdown_defaults = {"width": 0.8, "height": 0.8, "x": 0.1, "y": 0.1, "opacity": 1}
+
+groups.append(
+    ScratchPad(
+        "scratchpad",
+        [DropDown("term", terminal, **dropdown_defaults)],
+    )
+)
