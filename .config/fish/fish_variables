@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export PYENV_ROOT:/home/krit/\x2epyenv
 SETUVAR VIRTUAL_ENV_DISABLE_PROMPT:true
 SETUVAR ZO_CMD:zo
 SETUVAR Z_CMD:z
@@ -49,4 +50,4 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/home/krit/\x2elocal/bin
+SETUVAR fish_user_paths:/home/krit/\x2epyenv/bin\x1e/home/krit/\x2elocal/bin

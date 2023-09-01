@@ -8,7 +8,6 @@ if [[ $(cat ~/.config/theme.txt) == *"dark"* ]]; then
 	cat ~/.config/Vencord/settings/light.css >~/.config/Vencord/settings/quickCss.css
 	sed -i "s/dark.rasi/light.rasi/gi" ~/.config/rofi/config.rasi
 	gsettings set org.gnome.desktop.interface color-scheme prefer-light
-	xrdb merge ~/.config/.Xresources.light && kill -USR1 $(pidof st)
 	xsettingsd -c ~/.config/.xsettingsd.light
 elif [[ $(cat ~/.config/theme.txt) == *"light"* ]]; then
 	echo "dark" >~/.config/theme.txt
@@ -18,9 +17,11 @@ elif [[ $(cat ~/.config/theme.txt) == *"light"* ]]; then
 	cat ~/.config/Vencord/settings/dark.css >~/.config/Vencord/settings/quickCss.css
 	sed -i "s/light.rasi/dark.rasi/gi" ~/.config/rofi/config.rasi
 	gsettings set org.gnome.desktop.interface color-scheme prefer-dark
-	xrdb merge ~/.config/.Xresources.dark && kill -USR1 $(pidof st)
 	xsettingsd -c ~/.config/.xsettingsd.dark
 fi
+
+echo "" >>~/.wezterm.lua
+sed -i "$ d" ~/.wezterm.lua
 
 qtile cmd-obj -o cmd -f reload_config
 

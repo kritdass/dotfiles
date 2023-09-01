@@ -12,7 +12,7 @@ These are my personal dotfiles for my EndeavourOS system, though they should wor
 ## Programs
 **Window Manager:** [Qtile (git)](https://qtile.readthedocs.io/en/latest/) \
 **Compositor:** [Picom (fdev31)](https://github.com/fdev31/picom/) \
-**Terminal Emulator:** [St (siduck)](https://github.com/siduck/st) \
+**Terminal Emulator:** [WezTerm](https://wezfurlong.org/wezterm/) \
 **Shell:** [Fish](https://fishshell.com/) \
 **Editor:** [LazyVim](https://www.lazyvim.org/) \
 **App Launcher:** [Rofi](https://github.com/davatorium/rofi) \

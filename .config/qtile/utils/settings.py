@@ -1,7 +1,7 @@
 import os
 
 mod = "mod4"
-terminal = "st fish"
+terminal = "wezterm"
 
 font = "Fira Code Nerd Font Propo Ret"
 fontsize = 16
